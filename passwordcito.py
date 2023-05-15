@@ -5,11 +5,11 @@ import smtplib
 
 # Configurar conexión POP3
 pop_conn = poplib.POP3_SSL('outlook.office365.com')
-pop_conn.user('kelugo2@hotmail.com')
-pop_conn.pass_('Elmaravilloso21')
+pop_conn.user('buzon@hotmail.com')
+pop_conn.pass_('password')
 
 # Obtener lista de destinatarios
-destinatarios = ['kelugo_14@hotmail.com', 'kevin.lunag@ug.edu.ec', 'carlosxcs@outlook.es']
+destinatarios = ['destinatario1@hotmail.com', 'destinatario2@hotmail.com', 'destinatario3@outlook.es']
 print(f'Destinatarios: {destinatarios}')
 
 # Obtener información sobre los correos electrónicos en la cuenta
@@ -66,8 +66,8 @@ for i in range(num_messages):
     smtp_port = 587
 
     # Información de la cuenta de correo electrónico
-    username = 'kelugo2@hotmail.com'
-    password = 'Elmaravilloso21'
+    username = 'buzon@hotmail.com'
+    password = 'password'
 
     # Crear conexión segura con el servidor SMTP
     server = smtplib.SMTP(smtp_server, smtp_port)
@@ -77,7 +77,7 @@ for i in range(num_messages):
     server.login(username, password)
 
     # Enviar correo electrónico
-    from_address = 'kelugo2@hotmail.com'
+    from_address = 'buzon@hotmail.com'
     #to_address = decoded_to_address
     subject = subject
     cuerpo = body
